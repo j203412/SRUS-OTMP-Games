@@ -1,6 +1,6 @@
 class Player:
 
-    def __init__(self, uid: str, name: str):
+    def __init__(self, uid: int, name: str):
         self._uid = uid
         self._name = name
 
@@ -12,7 +12,7 @@ class Player:
     def name(self):
         return self._name
 
-    def __str__(self):
+    def __repr__(self):
         return f"{self._name}"
 
 
